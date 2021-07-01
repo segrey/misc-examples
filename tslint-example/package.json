@@ -1,0 +1,7 @@
+{
+  "name": "tslint-example",
+  "version": "1.0.0",
+  "dependencies": {
+    "tslint": "^6.1.3"
+  }
+}
