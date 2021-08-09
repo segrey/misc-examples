@@ -15,6 +15,9 @@
     "eslint": "^7.30.0"
   },
   "eslintConfig": {
+    "env": {
+      "node": true
+    },
     "rules": {
       "no-undef": "error"
     }
