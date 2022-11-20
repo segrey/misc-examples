@@ -2,7 +2,7 @@
 
 set -x
 
-. ./stop-ssh-server.sh
+./stop-ssh-server.sh
 
 set -e
 
