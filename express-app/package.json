@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "DEBUG=* node ./bin/www",
-    "print-node-version": "node --version; printenv PATH"
+    "print-node-version": "node --version; which node; printenv PATH"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
