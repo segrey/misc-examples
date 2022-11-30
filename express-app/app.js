@@ -39,3 +39,10 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+let id = 0;
+setInterval(() => {
+  if (id++ % 10 === 0) {
+    console.log('id: ' + id);
+  }
+}, 2000);
