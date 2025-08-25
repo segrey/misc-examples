@@ -4,7 +4,7 @@ describe('spec', () => {
   })
 
   it('that succeeds', () => {
-    expect(1).toBe(1)
+    expect(qqq(1, 1)).toBe(2)
   })
 });
 
