@@ -1,7 +1,7 @@
 # https://www.techrepublic.com/article/deploy-docker-container-ssh-access/
 # https://stackoverflow.com/a/61738823
 
-FROM node:18
+FROM node:24.9.0
 
 RUN apt-get update && apt-get install -y openssh-server
 RUN apt-get install -y vim
