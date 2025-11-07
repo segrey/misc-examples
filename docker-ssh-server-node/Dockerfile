@@ -29,4 +29,11 @@ WORKDIR "/home/$MY_USER/my-projects/misc-examples"
 
 USER root
 
-ENTRYPOINT service ssh restart && bash
+RUN cat > /start-ssh-server-and-open-bash.sh <<'EOF'
+#!/bin/bash
+service ssh restart
+exec bash
+EOF
+RUN chmod +x /start-ssh-server-and-open-bash.sh
+
+ENTRYPOINT ["/start-ssh-server-and-open-bash.sh"]
